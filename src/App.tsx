@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import LandingSection from './section/landingSection.tsx';
+import Architecture from './section/Architecture.tsx';
 
 export default function App() {
   //const box = useRef<HTMLDivElement>(null);
@@ -13,6 +14,7 @@ export default function App() {
   return (
     <div className='bg-black-custom'>
       <LandingSection />
+      <Architecture/>
     </div>
   )
 }
