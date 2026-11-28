@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Readex";
+  font-style: normal;
+  font-weight: 200 700; /* Rentang weight untuk variable font */
+  font-display: swap;
+  src: url("./assets/fonts/ReadexPro-VariableFont_HEXP,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Heathergreen";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/Heathergreen.otf") format("opentype");
+}
+
+@theme {
+  --font-readex: "Readex", sans-serif;
+  --font-heathergreen: "Heathergreen", sans-serif;
+
+  --color-black-custom: #121212;
+  --color-white-custom: #F5F5F5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge lama */
+}
+
+#root {
+  width: 100%;
+  overflow-x: clip;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge, Opera */
+}
